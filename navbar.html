@@ -1,0 +1,130 @@
+<!-- HTML FOR NAV BAR -->
+
+<body>
+        <div class="navbar">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <button style="background-color:white;" ><a href="signin.html">Login</a></button>
+                <button style="background-color:white;"><a href="#">Subscribe</a></button>
+                <button style="background-color:white;" ><a href="#">Contact</a></button>
+              </div>
+              <span class="nav-span" onclick="openNav()">&#9776;</span>
+            <!-- <img class="cn-logo" src="img/cn_logo.PNG" alt="logo" > -->
+            <h1 style=" font-size: 25px; text-align: center; "> High School Teachers<h1>
+            <!-- <div class="curve-border"><p></p></div> -->
+      </div>
+      
+  <!-- JAVASCRIPT FOR NAV BAR -->
+  
+  function openNav() {
+  document.getElementById("mySidenav").style.width = "50%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+<!-- CSS FOR NAV BAR -->
+
+
+
+.cn-logo{
+    float: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    width: 200px;
+    height: 75px;
+  }
+  .navbar a:hover{
+    color: #000;
+  }
+  .navbar{
+    text-decoration: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .curve-border{
+
+   background-color: #333;
+   text-decoration: none;
+   position: fixed;
+   width: 100%;
+   height:10px;
+
+  }
+  .select-style {
+    border: 1px solid #ccc;
+    width: 120px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fafafa url("img/icon-select.png") no-repeat 90% 50%;
+}
+
+.select-style select {
+    padding-left: 10px;
+    padding: 10px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+
+.nav-span{
+  padding-left: 10px;
+  /* padding-top: 25px; */
+  font-size:30px;
+  float: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #84bef1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  float: center;
+  padding: 10px 0px 10px 0px;
+  padding-top: 50px;
+  text-align:center;
+  text-transform: uppercase;
+}
+.sidenav a {
+  text-decoration: none;
+  padding: 8px 8px 8px 32px;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
